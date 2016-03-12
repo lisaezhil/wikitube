@@ -1,0 +1,45 @@
+{
+  "version": "1",
+  "name": "Wikitube",
+  "launch_path": "/wikitube/index.html",
+  "description": "Wikitube Firefox OS app",
+  "icons": {
+    "16": "/wikitube/images/logo16.png",
+    "32": "/wikitube/images/logo32.png",
+    "48": "/wikitube/images/logo48.png",
+    "60": "/wikitube/images/logo60.png",
+    "64": "/wikitube/images/logo64.png",
+    "90": "/wikitube/images/logo90.png",
+    "120": "/wikitube/images/logo120.png",
+    "128": "/wikitube/images/logo128.png"
+  },
+  "developer": {
+    "name": "mscfoss",
+    "url": "http://google.co.in"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+    "desktop-notification": {
+      "description": "To show notifications"
+    },
+    "geolocation": {
+      "description": "Marking out user location"
+    },
+    "alarms": {
+      "description": "Scheduling alarms"
+    }
+  },
+  "locales": {
+   "en": {
+      "name": "Wikitube App",
+      "description": "Wikitube Firefox OS app"
+    },
+    "en-US": {
+      "name": "Wikitube App",
+      "description": "Wikitube Firefox OS app"
+    },
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<!--
+    To turn off online status and enable offline support
+    <html manifest="manifest.appcache">
+ -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/headers.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/toolbars.css">
+    <title>Wikitube</title>
+        <!-- Localization -->
+    <link rel="resource" type="application/l10n" href="locales/locales.ini" />
+    <script type="application/javascript" src="js/l10n.js"></script>
+    <base target="_blank">
+</head>
+
+<body>
+
+    <section role="region">
+        <header>
+            <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+            <div id="online-status" title="Online"></div>
+            <menu type="toolbar">
+                <button id="install"><span class="icon icon-add">add</span></button>
+            </menu>
+            <h1>Wikitube</h1>
+        </header>
+    </section>
+
+
+    <div id="main">
+
+        <button id="pick-anything" data-l10n-id="file-sharing">File sharing</button>
+
+        <button id="record" data-l10n-id="share-pictures">Share pictures</button>
+
+        <button id="share" data-l10n-id="share-url">Share URL</button>
+
+        <button id="share-image" data-l10n-id="share-image">Share Image</button>
+        <img id="image-to-share" src="images/logo64.png" alt="">
+        
+        #### #### #### #### ####
+        #### #### #### #### ####
+        <form action="http://www.youtube.com/embed/" id="searchform"
+ <div id="simpleSearch">
+ <input type="search" name="search"  placeholder="Search" title="Search WikiTube [f]" accesskey="f" id="searchInput" />
+ <input type="hidden" value="Special:Search" name="title" />
+ <input type="submit" name="fulltext" value="Search" title="Search Youtube for video" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" />
+ <input type="submit" name="go" value="Go" title="page navigation if exists" id="searchButton" class="searchButton" />
+</div>
+</form>
+         <iframe width="320" height="200"
+src="http://www.youtube.com/embed/JBZ_4xjipUY?autoplay=1">
+</iframe> 
+<form action="https://en.wikipedia.org/w/index.php?title=Special%3ASearch" id="searchform"
+ <div id="simpleSearch">
+ <input type="search" name="search"  placeholder="Search" title="Search Wiki [f]" accesskey="f" id="searchInput" />
+ <input type="hidden" value="Special:Search" name="title" />
+ <input type="submit" name="fulltext" value="Search" title="Search Wiki for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" />
+ <input type="submit" name="go" value="Go" title="page navigation if exists" id="searchButton" class="searchButton" />
+</div>
+</form>
+        #### #### #### ####
+        #### #### #### ####
+        
+
+        <button id="compose-email" data-l10n-id="compose-email">Compose mail</button>
+
+        <button id="save-bookmark" data-l10n-id="save-bookmark">Save bookmark</button>
+
+        <button id="open-video" data-l10n-id="open-video">Open video</button>
+
+        <button id="add-notification" data-l10n-id="add-notification">Add notification</button>
+
+        <button id="geolocation" data-l10n-id="geolocation">Geolocation</button>
+        <div id="geolocation-display" data-l10n-id="golocation-values">Geolocation coords should show up here</div>
+
+        <button id="keep-screen-on" data-l10n-id="keep-screen-on">Keep screen on</button>
+
+        <button id="add-alarm" data-l10n-id="add-alarm">Add alarm</button>        
+        <div id="alarm-display" data-l10n-id="alarm-display"></div>
+
+        <button id="remove-all-alarms" data-l10n-id="remove-all-alarms">Remove all alarms</button>        
+        <div id="remove-alarms-display" data-l10n-id="alarm-display"></div>
+
+        <button id="log-visibility" data-l10n-id="log-visibility">App visibility</button>
+        <div id="log-visibility-display"></div>
+
+        <button id="cross-domain-xhr" data-l10n-id="cross-domain-xhr">Cross-domain XHR</button>
+        <div id="cross-domain-xhr-display"></div>
+
+        <button id="device-storage-pictures" data-l10n-id="device-storage-pictures">deviceStorage - pictures</button>
+        <div id="device-storage-pictures-display"></div>
+
+        <button id="get-all-contacts" data-l10n-id="get-all-contacts">Get all contacts</button>
+        <div id="get-all-contacts-display"></div>
+    </div>
+
+    <footer>
+        <div role="toolbar">
+            <ul>
+                <li><button id="reload" class="update" data-l10n-id="update-button">Update</button></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/webapp.js"></script>
+    <script type="text/javascript" src="js/offline.js"></script>
+</body>
+</html>
